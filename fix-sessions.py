@@ -60,7 +60,7 @@ def update_record():
             
             if records:
                 for i, record in enumerate(records, start=1):
-                    print(f"{i}. RadID: {record['radacctid']}, Start: {record['acctstarttime']}, ")
+                    print(f"{i}. RadID: {record['radacctid']}, Start: {record['acctstarttime']}, IP: {record['framedipaddress']}")
                 
                 selection = int(input("Select the record number to fix (0 to cancel): "))
                 if selection == 0:
